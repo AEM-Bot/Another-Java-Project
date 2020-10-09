@@ -8,14 +8,15 @@ public class CarRunner {
         Car car = new Car();
         Car porsche = new Car();
 
-        //best practice --> encapsulation
+        //best practice --> encapsulation --> not allowing to access fields directly
+        //instead access the methods and the underlying logic happens within the method
         porsche.setDoors(4);
         //System.out.println(porsche.getDoors());
         // never do this --> porsche.doors =4; against encapsulation
         //encapsulation hiding fields and exposing only the methods
 
         porsche.setColor("Silver");
-        porsche.setModel("Kia");
+        porsche.setModel("carrera");
 
         System.out.println("Model is: " + porsche.getModel());
         System.out.println("Color is: " + porsche.getColor());
