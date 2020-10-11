@@ -26,6 +26,9 @@ public class BankAccountRunner {
 
         System.out.println(sasankaAccount.getCustomerName());
 
+        BankAccount account = new BankAccount("Sasanka", "chs@gmail.com", 123456);
+        System.out.println(account.getAccountNumber() + account.getCustomerName());
+
     }
 
 

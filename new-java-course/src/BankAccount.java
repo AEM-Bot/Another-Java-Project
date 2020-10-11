@@ -23,8 +23,25 @@ public class BankAccount {
     public BankAccount(int accountNumber, int balance,
                        String customerName, String customerEmail, int phoneNumber) {
         System.out.println("Constructor with parameters called");
+        /*
+         this.accountNumber = accountNumber can be replaced with setAccountNumber(number);
+         but generally it is recommended practice and general rule
+         to use fields inside a constructor for initialization
+         should not be calling other methods or setters or getters inside the constructor
+         */
+        //setAccountNumber(accountNumber);
         this.accountNumber = accountNumber;
         this.balance = balance;
+        this.customerName = customerName;
+        this.customerEmail = customerEmail;
+        this.phoneNumber = phoneNumber;
+    }
+
+    /*
+        Shortcut for generating constructors with IDEs
+     */
+    public BankAccount(String customerName, String customerEmail, int phoneNumber) {
+        this(9999, 100, customerName, customerEmail, phoneNumber);
         this.customerName = customerName;
         this.customerEmail = customerEmail;
         this.phoneNumber = phoneNumber;
