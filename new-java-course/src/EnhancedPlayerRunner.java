@@ -6,7 +6,7 @@ public class EnhancedPlayerRunner {
                 "AKM");
         /*
             getHealth() is the only way to get the health
-            giving all the control to Enhanced Player class only to have the logic
+            giving all the control to Enhanced Player class to have the logic
 
          */
         System.out.println("Initial Health = " + enhancedPlayer.getHealth());
