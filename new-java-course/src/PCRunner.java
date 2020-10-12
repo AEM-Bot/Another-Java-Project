@@ -14,13 +14,21 @@ public class PCRunner {
         PC thePC = new PC(theCase, monitor, motherboard);
 
         /*
-            One Method by using getters
+            One Method by using getters as the getters access modifiers are public
             thePC object invokes getMonitor in turn invokes drawPixelAt Method
          */
-        thePC.getMonitor().drawPixelAt(1500, 1200, "Blue");
-        thePC.getMotherboard().loadProgram("Mac OS X");
-        thePC.getTheCase().pressPowerButton();
+//        thePC.getMonitor().drawPixelAt(1500, 1200, "Blue");
+//        thePC.getMotherboard().loadProgram("Mac OS X");
+//        thePC.getTheCase().pressPowerButton();
 
+        /*
+            Second Method is to create separate methods that can access internally
+            ex: PC class -> powerUp() Method
+            Creating objects within the objects is called composition
+            General rule first look for using composition rather than inheritance
+         */
+
+        thePC.powerUp();
 
     }
 }
