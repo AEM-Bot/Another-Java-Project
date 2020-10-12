@@ -1,4 +1,7 @@
 public class Room {
+    /*
+        General Rule --> Try to use composition whenever possible not inheritance
+     */
 
     private String color;
     private int walls;
