@@ -1,5 +1,13 @@
 public class CarFromVehicle extends Vehicle {
 
+    /*
+        Inheritance from Vehicle Super class or Base class
+        Inheritance in a nut shell --> "is a" relationship
+        ex: Car is a Vehicle
+        Composition in a nut shell --> "has a" relationship
+        Computer --> has a motherboard, has RAM, etc..
+     */
+
     private int gears;
     private int doors;
     private int wheels;
