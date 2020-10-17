@@ -5,5 +5,6 @@
 /.idea
 Another-Java-Project.iml
 **/.DS_Store
-
+/.class
+/new-java-course/out
 
