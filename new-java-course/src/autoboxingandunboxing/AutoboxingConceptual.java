@@ -77,6 +77,16 @@ public class AutoboxingConceptual {
         int newInt = myInt;
         String myString = "hello";
 
+        ArrayList<Double> doubleArrayList = new ArrayList<>();
+
+        for (double dbl = 0.0; dbl <= 10.0; dbl += 0.5) {
+            doubleArrayList.add(dbl);
+        }
+        for (int i = 0; i < doubleArrayList.size(); i++) {
+            double values = doubleArrayList.get(i);
+            System.out.println(i + " ---> " + values);
+        }
+
     }
 
 }
