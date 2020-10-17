@@ -58,6 +58,25 @@ public class AutoboxingConceptual {
 
         Integer integer = new Integer(1);
 
+        for (int i = 0; i <= 10; i++) {
+            //converting primitive to Wrapper object/class
+            integerArrayList.add(Integer.valueOf(i));
+        }
+        for (int i = 0; i <= 10; i++) {
+            //converting to primitive type from object class
+            System.out.println(i + " --> " + integerArrayList.get(i).intValue());
+        }
+
+        /*
+            Wrapper Classes are special classes that don't need
+            new keyword to create instance
+            Internally java is capable of converting primitive data type
+            to reference/object wrappers
+         */
+        Integer myInt = 56;
+        int newInt = myInt;
+        String myString = "hello";
+
     }
 
 }
